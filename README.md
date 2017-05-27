@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+目的: Rails5.1を使ってみる
 
-Things you may want to cover:
+# Versions
 
-* Ruby version
+|Ruby|2.4.1|
+|Rails|5.1.1|
 
-* System dependencies
+# DB
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+SQLite3(デフォルト)
