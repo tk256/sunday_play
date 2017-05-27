@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Organizations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Note</th>
+      <th>Telephone1</th>
+      <th>Thelephone2</th>
+      <th>Mail</th>
+      <th>Name kana</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @organizations.each do |organization| %>
+      <tr>
+        <td><%= organization.name %></td>
+        <td><%= organization.address %></td>
+        <td><%= organization.note %></td>
+        <td><%= organization.telephone1 %></td>
+        <td><%= organization.thelephone2 %></td>
+        <td><%= organization.mail %></td>
+        <td><%= organization.name_kana %></td>
+        <td><%= link_to 'Show', organization %></td>
+        <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+        <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organization', new_organization_path %>
